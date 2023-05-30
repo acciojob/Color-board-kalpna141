@@ -11,14 +11,14 @@
 
 }
 .square{
-background-color:rgb(29, 29, 29);
+
 transition: all 0.5s ease-in-out;
 transition-delay: 1s;
 	force: true
 }
 
 .square:hover{
-    background-color: green;
+    background-color:rgb(29, 29, 29);
 	transition:none;
 	transition-delay:0s;
 }
