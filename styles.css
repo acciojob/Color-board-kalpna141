@@ -1,27 +1,24 @@
 .container{
-    background-color: black;
-    display:grid;
-    width: 90%;
-    height: 600px;
-    grid-template-columns: repeat(40,1fr);
-    grid-template-rows: repeat(20,1fr);
-    padding:30px;
-    /* row-gap:5px;
-    column-gap:5px; */
+	display:grid;
+	grid-template-rows: repeat(20,15px);
+	grid-template-columns: repeat(40,15px);
+    gap:3px;
+    justify-content: center;
+    align-content: center;
+	border:40px solid black;
+	width:700px;
+	background:black;
+
 }
 .square{
-background: rgb(29, 29, 29);
-height:25px;
-width:25px;
-
-}
-.square:hover {
-    animation: myfirst 1s 1;
-	
+background-color:rgb(29, 29, 29);
+transition: all 0.5s ease-in-out;
+transition-delay: 1s;
+	force: true
 }
 
-@keyframes myfirst
-{
-    0%      {background:red;}
-    100%    {background:rgb(29, 29, 29);}
+.square:hover{
+    background-color: green;
+	transition:none;
+	transition-delay:0s;
 }
